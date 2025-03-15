@@ -35,6 +35,7 @@ return [
             'key' => env('PUSHER_APP_KEY', 'coolify'),
             'secret' => env('PUSHER_APP_SECRET', 'coolify'),
             'app_id' => env('PUSHER_APP_ID', 'coolify'),
+            'frontend_host' => env('PUSHER_FRONTEND_HOST', env('PUSHER_BACKEND_HOST', 'coolify-realtime')),
             'options' => [
                 'host' => env('PUSHER_BACKEND_HOST', 'coolify-realtime'),
                 'port' => env('PUSHER_BACKEND_PORT', 6001),
