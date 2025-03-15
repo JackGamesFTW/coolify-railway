@@ -99,9 +99,9 @@
             window.Pusher = Pusher;
             window.Echo = new Echo({
                 broadcaster: 'pusher',
-                cluster: "{{ config('constants.pusher.host') }}" || window.location.hostname,
+                cluster: "{{ config('constants.pusher.frontend_host') }}" || window.location.hostname,
                 key: "{{ config('constants.pusher.app_key') }}" || 'coolify',
-                wsHost: "{{ config('constants.pusher.host') }}" || window.location.hostname,
+                wsHost: "{{ config('constants.pusher.frontend_host') }}" || window.location.hostname,
                 wsPort: "{{ getRealtime() }}",
                 wssPort: "{{ getRealtime() }}",
                 forceTLS: false,
