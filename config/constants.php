@@ -31,6 +31,7 @@ return [
 
     'pusher' => [
         'host' => env('PUSHER_HOST'),
+        'frontend_host' => env('PUSHER_FRONTEND_HOST', env('PUSHER_HOST')),
         'port' => env('PUSHER_PORT'),
         'app_key' => env('PUSHER_APP_KEY'),
     ],
